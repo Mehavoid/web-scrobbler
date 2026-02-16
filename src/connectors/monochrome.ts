@@ -25,7 +25,7 @@ Connector.getTrack = () => {
 		for (const element of elements) {
 			for (const node of element.childNodes) {
 				if (node.nodeType === Node.TEXT_NODE) {
-					return node.textContent.trim();
+					return node?.textContent?.trim();
 				}
 			}
 		}
